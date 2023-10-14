@@ -11,9 +11,9 @@ const chances = document.getElementById('chances');
     
 num = Math.trunc(Math.random() * 10 +1);
     let s = 0;
-    let c = 4;
+    let c = 3;
 button.addEventListener('click', function () {
-    if(c>=0){
+    if(c!-1){
         var inputNum = Number(document.querySelector('input').value);
         if(!inputNum){
         result.innerHTML = "Please enter a number"
