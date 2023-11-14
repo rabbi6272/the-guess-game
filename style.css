@@ -1,0 +1,146 @@
+body{
+    height: 100vh;
+    margin: 0;
+    border: 0;
+    background-image:url(stacked-waves-haikei.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    
+}
+h1{
+    font-size: 5rem;
+    font-family: merriweather;
+    font-weight: 900;
+    padding-top: 20px;
+    margin:0 0 30px 0;
+    color: #0c8468;
+}
+.hidden{
+    display: none;
+}
+
+.hidden2{
+    display: none;
+}
+h2{
+    color: aliceblue;
+    font-size: 40px;
+    animation: popup 2500ms infinite;
+}
+@keyframes popup{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(4);
+    }
+}
+.gif, .gif2{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    transition: 400ms;
+    z-index: 10;
+}
+.gif-image, .gif-image2{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    font-size: large;
+    color: #072220;
+}
+.container{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#realAnsBox{
+    height: fit-content;
+    font-size: 3rem;
+    margin: 0;
+}
+#result-box{
+    background-color: transparent;
+    border: 2px solid #0c8468;
+    border-radius: 10px;
+    height: 35px;
+    width: 300px;
+    margin: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    font-size: medium;
+}
+input{
+    background-color: transparent ;
+    border: 2px solid  #0c8468;
+    border-radius: 10px;
+    height: 30px;
+    width: 200px;
+    font-size: large;
+    text-align: center;
+}
+button{
+    width: 80px;
+    height: 30px;
+    background-color: #52c7a9;
+    border: 2px solid  #0c8468;
+    border-radius: 20px;
+    transition: 100ms;
+    font-size: medium;
+}
+button:active{
+    scale: .9;
+}
+#refresh{
+    width: auto;
+}
+@media (max-width:764px) {
+    h1{
+        font-size: 2.5rem;
+    }
+    #realAnsBox{
+        font-size: 2.3rem;
+    }
+    #result-box{
+        height: 45px;
+        width: 330px;
+    }
+    input{
+        height: 35px;
+        width: 250px;
+    }
+    button{
+        height: 35px;
+        width: 90px;
+    }
+    .win-loose{
+        width: 90%;
+        height: 40%;
+    }
+    h2{
+        color: aliceblue;
+        font-size: 20px;
+        max-width: 100vw;
+        animation: popup 2500ms infinite;
+    }
+    @keyframes popup{
+        0%{
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(4);
+        }
+    }
+}
