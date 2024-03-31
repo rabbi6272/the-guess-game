@@ -7,15 +7,15 @@ const chances = document.getElementById('chances');
 
 
 num = Math.trunc(Math.random() * 10 +1);
-console.log(num);
-    let c = 2;
+    var c = 3;
+    chances.innerHTML = c;
 function guessfunction(){
-    if(c!=-1){
+    if(c!=0){
         var inputNum = Number(document.querySelector('input').value);
         if(!inputNum){
         result.innerHTML = "Please enter a number"
         } else{
-            chances.innerHTML=c--;
+            chances.innerHTML=`${--c}`;
             if (inputNum == num) {
                 result.innerHTML= "You guessed correctly";
                 ans.innerHTML=num;
